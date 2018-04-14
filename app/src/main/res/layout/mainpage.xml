@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome_tv_str"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d3d3d3">
+
+
+        <!--info  Row-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/infoTextTV"
+                android:text="@string/info_str"
+                android:layout_gravity="top"/>
+
+            </TableRow>
+
+
+
+
+        <!--Dimension Row-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/DimensionsTV"
+                android:text="@string/dimension_str"
+                android:textSize="15sp"
+                android:textIsSelectable="false"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dimXET"
+                android:text="20"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:layout_column="2"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dimYET"
+                android:text="19"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:layout_column="3"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dimZET"
+                android:text="21"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:layout_column="4"/>
+
+
+        </TableRow>
+
+
+        <!--microphone-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/micPosTv"
+                android:text="@string/micPos"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/micPosXET"
+                android:text="19"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:layout_column="2"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/micPosYET"
+                android:text="18"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:layout_column="3"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/micPosZET"
+                android:text="1.6"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:layout_column="4"/>
+
+
+
+            </TableRow>
+
+
+        <!--Source Position-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/sourcePosTv"
+                android:text="@string/sourcePos"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sourcePosXET"
+                android:text="5"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:layout_column="2"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sourcePosYET"
+                android:text="2"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:layout_column="3"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sourcePosZET"
+                android:text="1"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:layout_column="4"/>
+
+
+
+
+
+            </TableRow>
+
+
+
+
+
+        <!--FS-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/samplingrate_str"
+                android:id="@+id/sampligRateTv"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/samplingRateET"
+                android:text="@string/srDefault"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:layout_column="2"/>
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/samplingRateSP"
+                android:entries="@array/samplingRates"
+                android:layout_column="3"/>
+
+
+
+
+
+
+        </TableRow>
+
+
+        <!--Number of sources-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/images_str"
+                android:id="@+id/imagesTv"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagesET"
+                android:text="@string/imagesDefault"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:layout_column="2"/>
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagesSP"
+                android:layout_column="3"/>
+
+
+
+        </TableRow>
+
+
+
+        <!--reflection coefficients-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/coef_str"
+                android:id="@+id/coefTv"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/coefET"
+                android:text="@string/coefDefault"
+
+                android:selectAllOnFocus="true"
+                android:layout_column="2"/>
+
+
+
+        </TableRow>
+
+        <!--calculate  -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calcIR_str"
+                android:id="@+id/calculateButton"/>
+
+
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="I.R. details"
+                android:id="@+id/textView2"
+                android:layout_column="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tv1GUI"
+                android:layout_column="0"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe6e6e6">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rt_btn_str"
+                android:id="@+id/calcRTButton"
+                android:layout_column="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rt_result_str"
+                android:id="@+id/rtResultTV"
+                android:layout_column="3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c80_btn_str"
+                android:id="@+id/calcC80Button"
+                android:layout_column="1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/c80_result_str"
+                android:id="@+id/c80ResultTV"
+                android:layout_column="3"/>
+
+
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c50_btn_str"
+                android:id="@+id/calc50Button"
+                android:layout_column="1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/c50_result_str"
+                android:id="@+id/c50ResultTV"
+                android:layout_column="3"/>
+
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edt_btn_str"
+                android:id="@+id/calcEDTButton"
+                android:layout_column="1"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtParamET"
+                android:layout_column="3"
+                android:text="@string/edt_extra_param_str"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edt_result_str"
+                android:id="@+id/edtResultTV"
+                android:layout_column="4"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ct_btn_str"
+                android:id="@+id/calcCTButton"
+                android:layout_column="1"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctParamET"
+                android:layout_column="3"
+                android:text="@string/ct_extra_param_str"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ct_result_str"
+                android:id="@+id/ctResultTV"
+                android:layout_column="4"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strength_btn_str"
+                android:id="@+id/calcGButton"
+                android:layout_column="1"
+                android:visibility="invisible"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gParamET"
+                android:layout_column="3"
+                android:text="@string/strength_extra_param_str"
+                android:inputType="number|numberDecimal"
+                android:selectAllOnFocus="true"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strength_result_str"
+                android:id="@+id/gResultTV"
+                android:layout_column="4"
+                android:visibility="invisible"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--results-->
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+    </ScrollView>
+
+
+</LinearLayout>

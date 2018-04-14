@@ -1,0 +1,93 @@
+Applications Graphics Acceleration Info:
+Uptime: 339015983 Realtime: 1237985903
+
+** Graphics info for pid 28139 [gr.eap.pe195.dimitris.feap] **
+
+Recent DisplayList operations
+          DrawRect
+          DrawDisplayList
+          DrawDisplayList
+          DrawDisplayList
+          DrawDisplayList
+          DrawDisplayList
+            DrawDisplayList
+            DrawDisplayList
+              DrawPatch
+              Save
+              ClipRect
+              Translate
+              DrawPatch
+              DrawDisplayList
+                DrawText
+              RestoreToCount
+            DrawDisplayList
+          DrawDisplayList
+        DrawDisplayList
+      DrawPatch
+    RestoreToCount
+  DrawRect
+  DrawDisplayList
+    Save
+    ClipRect
+    DrawDisplayList
+      DrawDisplayList
+        DrawDisplayList
+        DrawDisplayList
+        DrawDisplayList
+          DrawRect
+          DrawDisplayList
+          DrawDisplayList
+          DrawDisplayList
+          DrawDisplayList
+          DrawDisplayList
+            DrawDisplayList
+            DrawDisplayList
+              DrawPatch
+              Save
+              ClipRect
+              Translate
+              DrawDisplayList
+                DrawText
+              RestoreToCount
+            DrawDisplayList
+          DrawDisplayList
+        DrawDisplayList
+      DrawPatch
+    RestoreToCount
+
+Caches:
+Current memory usage / total memory usage (bytes):
+  TextureCache          4298228 / 25165824
+  LayerCache                  0 / 16777216
+  GradientCache               0 /   524288
+  PathCache                   0 /  4194304
+  CircleShapeCache            0 /  1048576
+  OvalShapeCache              0 /  1048576
+  RoundRectShapeCache         0 /  1048576
+  RectShapeCache              0 /  1048576
+  ArcShapeCache               0 /  1048576
+  TextDropShadowCache         0 /  2097152
+  FontRenderer 0         262144 /   262144
+Other:
+  FboCache                    1 /       16
+  PatchCache                 18 /      512
+Total memory usage:
+  4560372 bytes, 4.35 MB
+
+Profile data in ms:
+
+	gr.eap.pe195.dimitris.feap/gr.eap.pe195.dimitris.feap.welcomePage/android.view.ViewRootImpl@41486a40
+	gr.eap.pe195.dimitris.feap/gr.eap.pe195.dimitris.feap.mainPage/android.view.ViewRootImpl@41b72af8
+View hierarchy:
+
+  gr.eap.pe195.dimitris.feap/gr.eap.pe195.dimitris.feap.welcomePage/android.view.ViewRootImpl@41486a40
+  9 views, 1.36 kB of display lists, 4 frames rendered
+
+  gr.eap.pe195.dimitris.feap/gr.eap.pe195.dimitris.feap.mainPage/android.view.ViewRootImpl@41b72af8
+  68 views, 9.85 kB of display lists, 151 frames rendered
+
+
+Total ViewRootImpl: 2
+Total Views:        77
+Total DisplayList:  11.20 kB
+
